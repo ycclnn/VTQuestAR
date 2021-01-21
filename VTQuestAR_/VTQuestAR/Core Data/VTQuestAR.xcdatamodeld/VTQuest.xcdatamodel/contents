@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17162" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ArPhoto" representedClassName=".ArPhoto" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="photos" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="Building" representedClassName=".Building" syncable="YES">
+        <attribute name="abbreviation" optional="YES" attributeType="String"/>
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="des_cription" optional="YES" attributeType="String"/>
+        <attribute name="imageFilename" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="yearBuilt" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Note" representedClassName=".Note" syncable="YES">
+        <attribute name="dateVisited" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="noteDescription" optional="YES" attributeType="String"/>
+        <attribute name="noteTitle" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="String"/>
+        <relationship name="photoAndAudio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoAndAudio" inverseName="note" inverseEntity="PhotoAndAudio"/>
+    </entity>
+    <entity name="PhotoAndAudio" representedClassName=".PhotoAndAudio" syncable="YES">
+        <attribute name="audio" optional="YES" attributeType="Binary"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="photoAndAudio" inverseEntity="Note"/>
+    </entity>
+    <elements>
+        <element name="ArPhoto" positionX="-54" positionY="81" width="128" height="103"/>
+        <element name="Building" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Note" positionX="-63" positionY="54" width="128" height="163"/>
+        <element name="PhotoAndAudio" positionX="-54" positionY="63" width="128" height="88"/>
+    </elements>
+</model>

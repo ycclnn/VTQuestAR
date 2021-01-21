@@ -1,0 +1,31 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+# ignore warnings from a specific pod
+pod 'FBSDKCoreKit', :inhibit_warnings => true
+
+target 'VTQuestAR' do
+  use_frameworks!
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+
+#pod 'MapboxVisionNativeAll', :podspec => 'https://api.mapbox.com/downloads/v1/vision/ios/mapbox-vision-native-all/0.12.0.podspec?access_token=sk.eyJ1IjoieXpuMTIzIiwiYSI6ImNrYnNnMThqZDAxN3IyeXJwcmg5dDk0cDkifQ.whMLFw4Az4p0CYQhH5h0tQ'
+  #pod 'MapboxDirections', '~> 0.33'
+  pod 'MapboxNavigation'
+#pod 'MapboxNavigation', '~> 0.40.0'	
+	#pod 'MapboxAccounts', '~> 2.1.0'
+  
+#
+#  # Vision only
+#  pod "MapboxVision", :git => 'https://github.com/mapbox/mapbox-vision-ios.git', :tag => 'v0.12.0'
+#
+#  # AR
+#  pod "MapboxVisionAR", :git => 'https://github.com/mapbox/mapbox-vision-ios.git', :tag => 'v0.12.0'
+#
+#  # Safety
+ # pod "MapboxVisionSafety", :git => 'https://github.com/mapbox/mapbox-vision-ios.git', :tag => 'v0.12.0'
+  pod 'ARCL'
+  
+end
