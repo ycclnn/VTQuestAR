@@ -21,7 +21,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoieXpuMTIzIiwiYSI6ImNraTkwOWxpNDBhZnkydG4xNnpuamY3eXcifQ.wjaEakpIVMN7Ec8uSm_I-g</string>
+	<string><GET_YOUR_OWN_MAPBOX_TOKEN></string>
 	<key>NSCameraUsageDescription</key>
 	<string>The app requires camera usage permission to work.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
