@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //initialze Google Api keys
-        GMSServices.provideAPIKey("AIzaSyBq2yD0-2MhTQ3EaQ-cGiEWZV45a2D7f8M")
-        GMSPlacesClient.provideAPIKey("AIzaSyBq2yD0-2MhTQ3EaQ-cGiEWZV45a2D7f8M")
+        GMSServices.provideAPIKey("GET YOUR OWN KEY")
+        GMSPlacesClient.provideAPIKey("GET YOUR OWN KEY")
         
         //create a polygon that cover vt campus area, will be used to check if user's inside the campus or not
         let rect = GMSMutablePath()
